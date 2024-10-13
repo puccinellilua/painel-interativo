@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle Interativo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        #painel-grafico {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Painel de Controle Interativo</h1>
+        <h2 class="text-center">Luã Puccinelli</h2>
+        <h3 class="text-center">Design de Interação</h3>
+
+        <div id="painel-controle" class="mb-5">
+            <h3>Controles</h3>
+            <form>
+                <div class="form-group">
+                    <label for="bg-color">Cor de fundo:</label>
+                    <input type="color" id="bg-color" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="border-width">Largura da borda (px):</label>
+                    <input type="range" id="border-width" class="form-control-range" min="0" max="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="width">Largura do cartão (px):</label>
+                    <input type="range" id="width" class="form-control-range" min="100" max="500">
+                </div>
+
+                <div class="form-group">
+                    <label for="card-text">Texto do cartão:</label>
+                    <input type="text" id="card-text" class="form-control" value="Texto padrão">
+                </div>
+
+                <div class="form-group">
+                    <label for="text-color">Cor do texto:</label>
+                    <input type="color" id="text-color" class="form-control">
+                </div>
+            </form>
+        </div>
+
+        <div id="painel-grafico">
+            <p id="card-text-display">Texto padrão</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
